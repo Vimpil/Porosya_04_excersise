@@ -1,0 +1,142 @@
+@font-face {
+	font-family: 'Lato';
+	src: url(../fonts/Lato-Regular.eot);
+	src: url(../fonts/Lato-Regular.eot?#iefix) format('embedded-opentype'), url(../fonts/Lato-Regular.woff) format('woff'), url(../fonts/Lato-Regular.ttf) format('truetype'), url(../fonts/Lato-Regular.svg#Lato-Regular) format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+}
+@font-face {
+	font-family: 'GreatVibes';
+	src: url(../fonts/GreatVibes-Regular.eot);
+	src: url(../fonts/GreatVibes-Regular.eot?#iefix) format('embedded-opentype'), url(../fonts/GreatVibes-Regular.woff) format('woff'), url(../fonts/GreatVibes-Regular.ttf) format('truetype'), url(../fonts/GreatVibes-Regular.svg#GreatVibes-Regular) format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+}
+html,body {
+	overflow: hidden;
+	overflow-x: hidden;
+}
+
+/* Header */
+.header {
+	padding-top: 95px;
+	position: relative;
+	z-index: 3;
+}
+.right_to_left {
+	content: "";
+	position: absolute;
+	width: 200%;
+	height: 600px;
+	top: -253.5px;
+	left: -50%;
+	z-index: 2;
+	background-color: #191919;
+	transform: rotate(-3.66deg);
+}
+.phone {
+	color: white;
+	font-family: Lato;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 48px;
+	float: left;
+	padding-top: 7px;
+}
+.logo {
+	top: 57px;
+	color: white;
+	font-family: GreatVibes;
+	font-size: 115px;
+	font-weight: 400;
+	line-height: 80px;
+	position: absolute;
+	left: 49.4%;
+	margin-left: -150px;
+}
+.fb_icon {
+	float: right;
+}
+#header_menu {
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+}
+.contact {
+	margin-bottom: 141px;
+}
+ul.nav.navbar-nav {
+	font-family: Lato;
+	font-size: 19px;
+	font-weight: 400;
+	line-height: 48px;
+	text-transform: uppercase;
+	display: inline-block;
+	float: none;
+}
+a.nav-link {
+	color: white;
+}
+nav.navbar.navbar-light.bg-faded {
+	text-align: center;
+}
+a.nav-link {
+	background-color: none !important;
+}
+a.nav-link:hover {
+	background-color: transparent;
+}
+a.nav-link:hover {
+	background-color: transparent;
+}
+.nav > li > a:hover {
+	background-color: transparent;
+	color:#B6B5B5;
+}
+a.nav-link {
+	padding: 16px 29px !important;
+}
+@media screen and (max-width:768px) {
+	.right_to_left {
+		height: 800px;
+	}	
+}
+@media screen and (max-width:768px) {
+.phone {
+		text-align: center;
+		float: none;
+	}
+}
+@media screen and (max-width:768px) {
+.header {
+    padding-top: 235px;
+}
+}
+@media screen and (max-width:768px) {
+	.fb_icon {
+    float: none;
+    text-align: center;
+}
+}
+@media screen and (max-width:768px) {
+	.contact {
+    margin-bottom: 0px;
+}
+}
+@media screen and (max-width:768px) {
+.right_to_left {
+    height: 1000px;
+}
+}
+/* END Header */
+
+/* Gallery slider */
+
+div#gallery_slider {
+    left: -50%;
+    top: -22px;
+}
+/* END Gallery slider */
