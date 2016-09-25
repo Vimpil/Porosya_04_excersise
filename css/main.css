@@ -20,21 +20,19 @@ html, body {
 
 /* Header */
 .header {
-	padding-top: 95px;
 	position: relative;
 	z-index: 3;
 }
 .right_to_left {
-	content: "";
 	position: relative;
-	width: 200%;
-	height: 600px;
-	top: -253.5px;
-	left: -50%;
+	width: 100%;
 	z-index: 2;
 	background-color: #191919;
-	transform: rotate(-3.66deg);
-	margin-bottom: -600px;
+	padding-top: 57px;
+	padding-bottom: 87px;
+	margin-bottom: -5.6%;
+	-webkit-clip-path: polygon(0 0, 2400px 0, 2400px 73%, 0 100%);
+	clip-path: polygon(0 0, 2400px 0, 2400px 87%, 0 100%);
 }
 .phone {
 	color: white;
@@ -43,30 +41,36 @@ html, body {
 	font-weight: 400;
 	line-height: 48px;
 	float: left;
-	padding-top: 7px;
+	padding-top: 45px;
 }
 .logo {
-	top: 57px;
 	color: white;
 	font-family: GreatVibes;
 	font-size: 115px;
 	font-weight: 400;
 	line-height: 80px;
 	position: absolute;
-	left: 49.4%;
-	margin-left: -150px;
+	right: 0;
+	left: 0;
+	text-align: center;
+	display: block;
+	width: auto;
+	pointer-events: none;
 }
-.fb_icon {
+a.fb_icon {
 	float: right;
+	padding-top: 38px;
+	cursor: pointer;
 }
 #header_menu {
 	margin-left: auto;
 	margin-right: auto;
 	left: 0;
 	right: 0;
+	margin-bottom: -12px;
 }
 .contact {
-	margin-bottom: 141px;
+	padding-bottom: 180px;
 }
 ul.nav.navbar-nav {
 	font-family: Lato;
@@ -99,50 +103,38 @@ a.nav-link:hover {
 a.nav-link {
 	padding: 16px 29px !important;
 }
-@media screen and (max-width:768px) {
-	.phone {
-		text-align: center;
-		float: none;
-	}
-	.header {
-		padding-top: 235px;
-	}
-	.fb_icon {
-		float: none;
-		text-align: center;
-	}
-	.contact {
-		margin-bottom: 0px;
-	}
-	.right_to_left {
-		height: 1000px;
-		margin-bottom: -1005px;
-	}
-	.navbar {
-		margin-bottom: -12px;
-	}
-	#header_menu{
-		margin-bottom: 31px;
-	}
-}
-@media screen and (min-width:769px){	
-	#header_menu{
-		margin-bottom: -35px;
-	}
-}
+
 /* END Header */
 
 /* Gallery slider */
 
 div#gallery_slider {
-    left: 0;
-    right: 0;
-    top: -22px;
-    position: relative;
-    margin: auto;
+	left: 0;
+	right: 0;
+	top: -22px;
+	position: relative;
+	margin: auto;
 }
 .nav > li > a:hover, .nav > li > a:focus {
-    background-color:transparent;
+	background-color: transparent;
+}
+@media screen and (max-width:768px) {
+	.phone {
+		text-align: center;
+		float: none;
+	}
+	a.fb_icon {
+    float: none;
+    text-align: center;
+    display: block;
+}
+	.contact {
+		padding-top: 140px;
+		padding-bottom: 0px;
+	}
+	.right_to_left{
+		    margin-bottom: -7%;
+	}
 }
 
 /* END Gallery slider */
