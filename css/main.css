@@ -7,6 +7,14 @@
 	font-stretch: normal;
 }
 @font-face {
+	font-family: 'Lato-Thin';
+	src: url(../fonts/Lato-Thin.eot);
+	src: url(../fonts/Lato-Thin.eot?#iefix) format('embedded-opentype'), url(../fonts/Lato-Thin.woff) format('woff'), url(../fonts/Lato-Thin.ttf) format('truetype'), url(../fonts/Lato-Thin.svg#Lato-Thin) format('svg');
+	font-weight: 100;
+	font-style: normal;
+	font-stretch: normal;
+}
+@font-face {
 	font-family: 'GreatVibes';
 	src: url(../fonts/GreatVibes-Regular.eot);
 	src: url(../fonts/GreatVibes-Regular.eot?#iefix) format('embedded-opentype'), url(../fonts/GreatVibes-Regular.woff) format('woff'), url(../fonts/GreatVibes-Regular.ttf) format('truetype'), url(../fonts/GreatVibes-Regular.svg#GreatVibes-Regular) format('svg');
@@ -14,6 +22,15 @@
 	font-style: normal;
 	font-stretch: normal;
 }
+@font-face {
+	font-family: 'Lato-Semibold';
+	src: url(../fonts/Lato-Semibold.eot);
+	src: url(../fonts/Lato-Semibold.eot?#iefix) format('embedded-opentype'), url(../fonts/Lato-Semibold.woff) format('woff'), url(../fonts/Lato-Semibold.ttf) format('truetype'), url(../fonts/Lato-Semibold.svg#Lato-Semibold) format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+}
+
 html, body {
 	overflow-x: hidden;
 }
@@ -26,13 +43,13 @@ html, body {
 .right_to_left {
 	position: relative;
 	width: 100%;
-	z-index: 2;
+	z-index: 4;
 	background-color: #191919;
 	padding-top: 57px;
-	padding-bottom: 87px;
-	margin-bottom: -5.6%;
-	-webkit-clip-path: polygon(0 0, 2400px 0, 2400px 73%, 0 100%);
-	clip-path: polygon(0 0, 2400px 0, 2400px 87%, 0 100%);
+	padding-bottom: 77px;
+	margin-bottom: -6.3%;
+	-webkit-clip-path: polygon(0 0, 2400px 0, 2400px 60%, 0 100%);
+	clip-path: polygon(0 0, 2400px 0, 2400px 61%, 0 100%);
 }
 .phone {
 	color: white;
@@ -59,8 +76,11 @@ html, body {
 }
 a.fb_icon {
 	float: right;
-	padding-top: 38px;
 	cursor: pointer;
+	background: url('../images/sprites.png') no-repeat 0 0;
+	width: 60px;
+	height: 60px;
+	margin-top: 38px;
 }
 #header_menu {
 	margin-left: auto;
@@ -111,9 +131,11 @@ a.nav-link {
 div#gallery_slider {
 	left: 0;
 	right: 0;
-	top: -22px;
-	position: relative;
 	margin: auto;
+	z-index: 3;
+	-webkit-clip-path: polygon(0 0, 2400px 0, 2400px 78%, 0 100%);
+	clip-path: polygon(0 0, 2400px 0, 2400px 78%, 0 100%);
+	margin-bottom: -55px;
 }
 .nav > li > a:hover, .nav > li > a:focus {
 	background-color: transparent;
@@ -124,17 +146,147 @@ div#gallery_slider {
 		float: none;
 	}
 	a.fb_icon {
-    float: none;
-    text-align: center;
-    display: block;
-}
+		float: none;
+		text-align: center;
+		display: block;
+	}
 	.contact {
 		padding-top: 140px;
 		padding-bottom: 0px;
 	}
-	.right_to_left{
-		    margin-bottom: -7%;
+	.right_to_left {
+		margin-bottom: -14%;
 	}
+}
+a#phone_number:hover {
+	text-decoration: none;
+	color: white;
+}
+a#phone_number:link {
+	text-decoration: none;
+	color: white;
+	display: block;
 }
 
 /* END Gallery slider */
+
+/* Welcome block */
+
+.left_to_right {
+	position: relative;
+	width: 100%;
+	z-index: 2;
+	background-color: #191919;
+	padding-bottom: 168px;
+	margin-bottom: -5.6%;
+	-webkit-clip-path: polygon(0 0%, 2400px 19%, 2400px 98%, 0 79%);
+	clip-path: polygon(0 73%, 2400px 0, 2400px 73%, 0 100%);
+	padding-top: 193px;
+}
+.info_block {
+	color: white;
+	font-family: Lato-Thin;
+	font-size: 15px;
+	line-height: 22px;
+	font-weight: 100;
+	display: inline-block;
+	padding-bottom: 74px;
+}
+.txt {
+	display: inline-block;
+	float: right;
+	text-align: justify;
+	color: #888;
+	font-family: Lato;
+	font-size: 15px;
+	font-weight: 100;
+	line-height: 22px;
+}
+.info_block img {
+}
+.title.black {
+	color: black;
+}
+.title.white {
+	color: white;
+	padding-bottom: 22px;
+	line-height: 54px;
+}
+.title {
+	font-size: 48px;
+	text-transform: uppercase;
+}
+.title b {
+	font-family: "Lato-Semibold";
+}
+.ug-slider-control.ug-bullets.ug-skin-default {
+    top: 84%!important;
+    left: 50%!important;
+    margin-left: -52px!important;
+}
+
+.ug-bullet {
+    background: url('../images/sprites.png') no-repeat -40px -66px!important;
+    width: 22px!important;
+    height: 22px!important;
+    margin-right: 9px;
+}
+.item {
+  margin-top: 5px;
+  position: relative;
+  overflow: hidden;
+  height: 145px;
+  width: 180px;
+  float: left;
+  margin-right: 20px;
+}
+.item .tatoo_sal_build {
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.item:hover .tatoo_sal_build {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.txt_contacts {
+    margin-top: 18px;
+}
+
+.mark_icon {
+    background: url('../images/sprites.png') no-repeat -109px -45px;
+    margin-right: 8px;
+    width: 10px;
+    height: 15px;
+    display: inline-block;
+}
+
+.time_icon {
+    background: url('../images/sprites.png') no-repeat -90px -45px;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin-right: 8px;
+}
+.txt a {
+    color: #d2d2d2;
+    cursor: pointer;
+}
+
+.txt a:hover {
+    text-decoration: none;
+}
+.tatoo_sal_build{
+	 background: url('../images/tatoo_salon_mag.jpg') center center no-repeat;
+	 height: 145px;
+}
+@media screen and (max-width:768px) {
+	.left_to_right .container {
+    padding-bottom: 180px;
+}
+}
+/* END Welcome block */
