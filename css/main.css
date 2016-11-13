@@ -30,7 +30,6 @@
 	font-style: normal;
 	font-stretch: normal;
 }
-
 html, body {
 	overflow-x: hidden;
 }
@@ -46,7 +45,7 @@ html, body {
 	z-index: 4;
 	background-color: #191919;
 	padding-top: 57px;
-	padding-bottom: 77px;
+	padding-bottom: 85px;
 	margin-bottom: -6.3%;
 	-webkit-clip-path: polygon(0 0, 2400px 0, 2400px 60%, 0 100%);
 	clip-path: polygon(0 0, 2400px 0, 2400px 61%, 0 100%);
@@ -177,6 +176,38 @@ a#phone_number:link {
 	width: 100%;
 	z-index: 2;
 	background-color: #191919;
+	padding-bottom: 173px;
+	-webkit-clip-path: polygon(0 0%, 2400px 19%, 2400px 98%, 0 79%);
+	clip-path: polygon(0 73%, 2400px 0, 2400px 73%, 0 100%);
+	padding-top: 193px;
+}
+@media screen and (min-width:1201px) {
+	.left_to_right {
+		margin-bottom: -122px;
+	}
+}
+@media screen and (min-width:768px) and (max-width:1200px) {
+	.left_to_right {
+		margin-bottom: -168px;
+	}
+}
+.right_to_left_full_v {
+	position: relative;
+	width: 100%;
+	z-index: 2;
+	background-color: #191919;
+	padding-bottom: 192px;
+	margin-bottom: -5.6%;
+	-webkit-clip-path: polygon(0 19%, 2400px 0, 2400px 81%, 0 100%);
+	clip-path: polygon(0 73%, 2400px 0, 2400px 73%, 0 100%);
+	padding-top: 259px;
+	margin-top: -145px;
+}
+.left_to_right_full_v {
+	position: relative;
+	width: 100%;
+	z-index: 2;
+	background-color: #191919;
 	padding-bottom: 168px;
 	margin-bottom: -5.6%;
 	-webkit-clip-path: polygon(0 0%, 2400px 19%, 2400px 98%, 0 79%);
@@ -192,101 +223,283 @@ a#phone_number:link {
 	display: inline-block;
 	padding-bottom: 74px;
 }
+.wide .info_block {
+	margin-bottom: 17px;
+	padding-bottom: 0px;
+}
+.wide .under_title {
+	line-height: 62px;
+	margin-bottom: 15px;
+}
+.title.white b {
+	font-family: "Lato";
+}
 .txt {
 	display: inline-block;
 	float: right;
 	text-align: justify;
 	color: #888;
-	font-family: Lato;
+	font-family: "Lato-thin";
 	font-size: 15px;
 	font-weight: 100;
 	line-height: 22px;
 }
 .info_block img {
+	margin-right: 26px;
 }
 .title.black {
 	color: black;
 }
 .title.white {
+	padding-bottom: 0;
 	color: white;
-	padding-bottom: 22px;
-	line-height: 54px;
+	font-family: "Lato-thin";
 }
 .title {
 	font-size: 48px;
 	text-transform: uppercase;
+	padding-bottom: 22px;
+	line-height: 53px;
 }
 .title b {
 	font-family: "Lato-Semibold";
 }
 .ug-slider-control.ug-bullets.ug-skin-default {
-    top: 84%!important;
-    left: 50%!important;
-    margin-left: -52px!important;
+	top: 84.7% !important;
+	left: 50% !important;
+	margin-left: -52px !important;
 }
-
+.ug-bullets.ug-skin-default .ug-bullet.ug-bullet-active {
+	background: url('../images/sprites.png') no-repeat -36px -86px !important;
+}
 .ug-bullet {
-    background: url('../images/sprites.png') no-repeat -40px -66px!important;
-    width: 22px!important;
-    height: 22px!important;
-    margin-right: 9px;
+	background: url('../images/sprites.png') no-repeat -36px -61px !important;
+	width: 22px !important;
+	height: 22px !important;
+	margin-right: 9px;
 }
 .item {
-  margin-top: 5px;
-  position: relative;
-  overflow: hidden;
-  height: 145px;
-  width: 180px;
-  float: left;
-  margin-right: 20px;
+	margin-top: 5px;
+	position: relative;
+	overflow: hidden;
+	height: 145px;
+	width: 180px;
+	float: left;
+	margin-right: 20px;
 }
 .item .tatoo_sal_build {
-  -moz-transform: scale(1);
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  -moz-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+	-moz-transform: scale(1);
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
 }
 .item:hover .tatoo_sal_build {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
 }
 .txt_contacts {
-    margin-top: 18px;
+	margin-top: 18px;
 }
-
 .mark_icon {
-    background: url('../images/sprites.png') no-repeat -109px -45px;
-    margin-right: 8px;
-    width: 10px;
-    height: 15px;
-    display: inline-block;
+	background: url('../images/sprites.png') no-repeat -109px -45px;
+	margin-right: 8px;
+	width: 10px;
+	height: 15px;
+	display: inline-block;
 }
-
 .time_icon {
-    background: url('../images/sprites.png') no-repeat -90px -45px;
-    width: 15px;
-    height: 15px;
-    display: inline-block;
-    margin-right: 8px;
+	background: url('../images/sprites.png') no-repeat -90px -45px;
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	margin-right: 8px;
 }
 .txt a {
-    color: #d2d2d2;
-    cursor: pointer;
+	color: #d2d2d2;
+	cursor: pointer;
 }
-
 .txt a:hover {
-    text-decoration: none;
+	text-decoration: none;
 }
-.tatoo_sal_build{
-	 background: url('../images/tatoo_salon_mag.jpg') center center no-repeat;
-	 height: 145px;
+.tatoo_sal_build {
+	background: url('../images/tatoo_salon_mag.jpg') center center no-repeat;
+	height: 145px;
 }
 @media screen and (max-width:768px) {
 	.left_to_right .container {
-    padding-bottom: 180px;
+		padding-bottom: 180px;
+	}
+	body > div.right_to_left {
+		margin-bottom: -20.3% !important;
+	}
+	div#gallery_slider {
+		margin-bottom: -34px;
+	}
 }
+@media screen and (min-width:768px) and (max-width:1200px) {
+	body > div.right_to_left {
+		margin-bottom: -12.3% !important;
+	}
+	div#gallery_slider {
+		mar
+		gin-bottom: -28px !important;
+	}
+	.left_to_right .container {
+		padding-bottom: 160px;
+	}
 }
+@media screen and (min-width:1201px) {
+	body > div.right_to_left {
+		margin-bottom: -8.3% !important;
+	}
+}
+
 /* END Welcome block */
+
+/* Caurusel block + right_to_left block */
+.center {
+	text-align: center;
+}
+.under_title {
+	color: #888;
+	font-family: GreatVibes;
+	font-size: 48px;
+}
+.title_ps {
+	color: #888;
+	font-family: Lato;
+	font-size: 15px;
+}
+.carouse_info_block img {
+	width: 100px;
+}
+.slick-slide img {
+	width: 270px !important;
+}
+.ug-gallery-wrapper {
+	display: block;
+	position: absolute;
+}
+.ug-gallery-wrapper {
+	left: 0;
+}
+.ug-tile-navigation-wrapper {
+	top: 42.7% !important;
+	z-index: 5;
+	left: 5% !important;
+	width: 90%;
+	pointer-events: none;
+}
+.ug-button-tile-navigation.ug-button-tile-play.ug-pause-icon {
+	display: none;
+}
+.ug-button-tile-navigation.ug-button-tile-right {
+	right: 5%;
+	float: right;
+}
+.ug-button-tile-navigation.ug-button-tile-left {
+	left: 5% !important;
+}
+.ug-button-tile-navigation.ug-button-tile-left {
+	background-image: url(../images/left_arr_caurusel.png) !important;
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	width: 59px;
+	height: 55px;
+	pointer-events: all;
+}
+.ug-button-tile-navigation.ug-button-tile-left:hover {
+	background-image: url(../images/left_arr_caurusel.png) !important;
+	background-position: 0 -55px;
+	width: 59px;
+	height: 55px;
+}
+.ug-button-tile-navigation.ug-button-tile-right {
+	background-image: url(../images/right_arr_caurusel.png) !important;
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	width: 59px;
+	height: 55px;
+	pointer-events: all;
+}
+.ug-button-tile-navigation.ug-button-tile-right:hover {
+	background-image: url(../images/right_arr_caurusel.png) !important;
+	background-position: 0 -55px;
+	width: 59px;
+	height: 55px;
+}
+.ug-carousel-wrapper img {
+	top: 0 !important;
+	height: auto !important;
+}
+.image_block img {
+	width: 100%;
+}
+.info_block .txt {
+	text-align: left;
+	margin-bottom: 19.5px;
+}
+#carousel_info_block {
+	margin-top: -84px;
+}
+.info_block.marg_106 {
+	margin-top: 103px;
+	width: 90%;
+	padding-bottom: 68px;
+}
+
+/* END Caurusel block + right_to_left block */
+
+/* Appoinmentment */
+.book_appointment {
+    top: -23px;
+    position: absolute;
+    right: 4%;
+    background-color: #888888;
+    z-index: 5;
+    border: 1px solid white;
+    width: 291px;
+    height: 58px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-family: Lato-thin;
+    font-size: 21px;
+    padding-top: 12px;
+}
+.appointment_wrap {
+    position: relative;    
+    margin-bottom: 106px;
+}
+
+.ug-thumb-wrapper img{
+	transition: all .2s ease-in-out!important;
+	-moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);    
+}
+.ug-thumb-wrapper img:hover{
+	    transition: all 200ms ease-in-out!important;
+	 -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.ug-thumb-overlay{
+	pointer-events: none!important; 
+	
+}
+.ug-textpanel{
+	pointer-events: none!important;
+}
+.ug-textpanel-textwrapper{
+	pointer-events: none!important;
+}
+.ug-thumb-wrapper.ug-tile .ug-tile-icon.ug-icon-zoom{
+	background-image: url(../images/icon_gal_magn_glss.png)!important;
+	top:30%!important;
+}
+
+/* END Appoinmentment*/
