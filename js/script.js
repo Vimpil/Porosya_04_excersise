@@ -4,7 +4,7 @@ $(document).ready(function() {
 				gallery_autoplay: false,
 				slider_enable_arrows: false,
 				gallery_width: 2560,
-				gallery_height: 1540,
+				gallery_height: 1589,
 				gallery_min_width: 150,
 				gallery_min_height: 150,
 				gallery_preserve_ratio: true,
@@ -37,6 +37,18 @@ $(document).ready(function() {
 				tile_height: 340,
 				tile_width: 262,
 				grid_space_between_cols: 30,
-				grid_space_between_rows: 50,
+				grid_space_between_rows: 45,
+				grid_num_rows:10,
+			});
+			$("#grid_info_block_2").unitegallery({
+				gallery_theme: "tilesgrid",
+				tile_enable_textpanel: true,
+				tile_enable_textpanel: true,
+				tile_enable_shadow:false,
+				tile_enable_border:false,
+				tile_enable_icons: false,
+				tile_height: 250,
+				tile_width: 370,
+				grid_space_between_cols: 30,
 			});
 		});
