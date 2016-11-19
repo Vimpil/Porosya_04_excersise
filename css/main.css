@@ -519,6 +519,12 @@ a#phone_number:link {
     margin-top: -83px;
 }
 }
+@media screen  and (max-width:1199px) {
+	.artists {
+    margin-bottom: 50px;
+}
+
+}
 .info_block.marg_106 {
     margin-top: 102px;
     width: 90%;
@@ -606,8 +612,15 @@ a.book_appointment {
 .left_to_right_full_v.posts {
     padding-top: 139px;
     padding-bottom: 284px;
-    margin-bottom: -281px;
+    margin-bottom: -130px;
 }
+
+@media screen  and (max-width:991px){
+	.left_to_right_full_v.posts {
+		margin-bottom: -220px;
+	}
+}
+
 div#grid_info_block {
     margin-bottom: 116px;
 }
@@ -780,6 +793,11 @@ a, a:hover, .pic .pic-image, .pic-caption, .pic:hover .pic-caption, .pic:hover i
     color: #888;
     font-family: Lato-Thin;
 }
+@media screen  and (max-width:768px){
+	.info_block.marg_106 .phone {
+		text-align: left;
+	}
+}
 img.small_icon_padd {
     margin-right: 10px;
     margin-bottom: 2px;
@@ -842,6 +860,38 @@ img.small_icon_padd_time {
 	line-height: 48px;
 	float: left;
 }
+
+@media screen  and (max-width:1188px){
+	.footer_made_by_block {
+    margin-left: 0px!important;
+}
+	.logo_footer {
+		float: none;
+	}
+	.fb_icon.footer {
+    float: none!important;
+	}
+	.copy_write {
+		float: none;
+	}
+	.made_by{
+		float: none;
+		text-align: center;
+	}
+	.right_to_left2 {
+    position: relative;
+    width: 100%;
+    z-index: 4;
+    background-color: #191919;
+    padding-top: 207px;
+    padding-bottom: 84px;
+    margin-bottom: -6.3%;
+    -webkit-clip-path: polygon(0 24%, 2400px 0, 2400px 100%, 0 100%);
+    clip-path: polygon(0 0, 2400px 0, 2400px 61%, 0 100%);
+    margin-top: -86px;
+}
+}
+
 a.fb_icon.footer {
     float: right;
     cursor: pointer;
