@@ -72,9 +72,10 @@ html, body {
     display: block;
     width: auto;
     width: 100px;
+    text-decoration: none;
 }
 
-.logo:hover, .logo_footer:hover{
+.logo:hover, .logo_footer:hover,.logo:active, .logo_footer:active{
 	text-decoration: none;
 	color:white;
 	cursor: pointer;
@@ -612,7 +613,7 @@ a.book_appointment {
 .left_to_right_full_v.posts {
     padding-top: 139px;
     padding-bottom: 284px;
-    margin-bottom: -130px;
+    margin-bottom: -131px;
 }
 
 @media screen  and (max-width:991px){
@@ -769,7 +770,12 @@ a, a:hover, .pic .pic-image, .pic-caption, .pic:hover .pic-caption, .pic:hover i
 /* END LEFT TO RIGHT 2 BLOCK*/
 
 /* INSIDE WHITE BLOCK*/
-
+.place_mark img{
+	cursor: default;
+}
+.time_icon_txt img{
+	cursor: default;
+}
 .contact_us_txt {
     margin-bottom: 22px;
 }
@@ -819,7 +825,7 @@ img.small_icon_padd_time {
     background-color: #191919;
     padding-top: 196px;
     padding-bottom: 40px;
-    margin-bottom: -6.3%;
+    margin-bottom:0;
     -webkit-clip-path: polygon(0 41%, 2400px 0, 2400px 100%, 0 100%);
     clip-path: polygon(0 0, 2400px 0, 2400px 61%, 0 100%);
     margin-top: -58px;
