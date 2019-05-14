@@ -221,7 +221,7 @@ a#phone_number:link {
     padding-bottom: 193px;
     margin-bottom: -5.6%;
     -webkit-clip-path: polygon(0 19%, 2400px 0, 2400px 81%, 0 100%);
-    clip-path: polygon(0 73%, 2400px 0, 2400px 73%, 0 100%);
+    clip-path: polygon(0 19%, 2400px 0, 2400px 81%, 0 100%);
     padding-top: 260px;
     margin-top: -147px;
 }
@@ -253,7 +253,7 @@ a#phone_number:link {
     padding-bottom: 150px;
     margin-bottom: -128px;
     -webkit-clip-path: polygon(0 0%, 2400px 18%, 2400px 98%, 0 79%);
-    clip-path: polygon(0 73%, 2400px 0, 2400px 73%, 0 100%);
+    clip-path: polygon(0 0%, 2400px 18%, 2400px 98%, 0 79%);
     padding-top: 194px;
 }
 .info_block {
@@ -494,7 +494,16 @@ a#phone_number:link {
 .image_block img {
 	width: 100%;
 }
-
+@media screen and (max-width: 455px){
+	.image_block img{
+		width:228px;
+		margin: 0 auto;
+		float:none;
+		text-align:center;
+		display:block;
+		margin-bottom:65px;
+	}
+}
 .justify{
 	text-align: justify!important;
 }
@@ -720,8 +729,8 @@ a, a:hover, .pic .pic-image, .pic-caption, .pic:hover .pic-caption, .pic:hover i
 	display: inline-block;
 }
 .background_block2{
-	opacity: 0.5; /* Полупрозрачный фон */
-    filter: alpha(Opacity=50); /* Прозрачность в IE */
+	opacity: 0.5; /* ÐŸÐ¾Ð»ÑƒÐ¿Ñ€Ð¾Ð·Ñ€Ð°Ñ‡Ð½Ñ‹Ð¹ Ñ„Ð¾Ð½ */
+    filter: alpha(Opacity=50); /* ÐŸÑ€Ð¾Ð·Ñ€Ð°Ñ‡Ð½Ð¾ÑÑ‚ÑŒ Ð² IE */
     height: 100%;
     width: 100%;
 	background: black;
@@ -827,7 +836,7 @@ img.small_icon_padd_time {
     padding-bottom: 40px;
     margin-bottom:0;
     -webkit-clip-path: polygon(0 41%, 2400px 0, 2400px 100%, 0 100%);
-    clip-path: polygon(0 0, 2400px 0, 2400px 61%, 0 100%);
+    clip-path: polygon(0 41%, 2400px 0, 2400px 100%, 0 100%);
     margin-top: -58px;
 }
 .copy_write {
